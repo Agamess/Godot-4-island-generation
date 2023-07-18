@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ct66vi2hpykq7"]
+
+[ext_resource type="Script" path="res://world_generation_tools/world_generation_scripts/details.gd" id="1_rf807"]
+
+[node name="detail_generator" type="Node3D"]
+script = ExtResource("1_rf807")

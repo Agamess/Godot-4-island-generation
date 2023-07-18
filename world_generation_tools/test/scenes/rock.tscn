@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgle01l6iwfax"]
+
+[ext_resource type="ArrayMesh" uid="uid://dgegq42sq55jd" path="res://world_generation_tools/test/assets/ROCK.obj" id="1_0po7m"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kqyfe"]
+size = Vector3(0.780605, 0.530652, 1)
+
+[node name="rock" type="StaticBody3D"]
+transform = Transform3D(6.089, 0, 0, 0, 6.089, 0, 0, 0, 6.089, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.378, 0, 0, 0, 0.378, 0, 0, 0, 0.378, 0, 0, 0)
+mesh = ExtResource("1_0po7m")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_kqyfe")
