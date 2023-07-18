@@ -1,6 +1,7 @@
 @tool
 extends StaticBody3D
 
+@export var auto_generate_mesh:bool = false
 @export var Generate_mesh:bool : set=generate_mesh
 @export var size:int = 3000
 @export var fall_width:int = 10
@@ -15,7 +16,8 @@ extends StaticBody3D
 @export var terrain_height_curve:Curve
 
 func _ready() -> void:
-	#generate_mesh()
+	if auto_generate_mesh:
+		generate_mesh(0)
 	pass # Replace with function body.
 	
 func generate_mesh(__) -> void:
