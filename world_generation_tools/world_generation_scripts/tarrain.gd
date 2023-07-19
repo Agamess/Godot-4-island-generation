@@ -24,6 +24,7 @@ func generate_mesh(__) -> void:
 	print("Generating Mesh...")
 	
 	noise.seed = randi()
+	noise.frequency = noice_frequency
 	
 	var plane_mesh = PlaneMesh.new()
 	plane_mesh.size = Vector2(size,size)
