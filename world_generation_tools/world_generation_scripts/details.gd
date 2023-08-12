@@ -51,7 +51,7 @@ func generate_stuff(__):
 
 func generate_trees():
 	for i in tree_count:
-		var num = randi_range(0,rocks.size()-1)
+		var num = randi_range(0,trees.size()-1)
 		var treei = trees[num].instantiate()
 		add_child(treei)
 		var pos = Vector3(randi_range(MIN_Z,MAX_X), max_spawn_height, randi_range(MIN_Z,MAX_X))
@@ -79,7 +79,7 @@ func generate_rocks():
 
 func generate_flowers():
 	for i in flower_count:
-		var num = randi_range(0,rocks.size()-1)
+		var num = randi_range(0,flowers.size()-1)
 		var floweri = flowers[num].instantiate()
 		add_child(floweri)
 		var pos = Vector3(randi_range(MIN_Z,MAX_X), max_spawn_height, randi_range(MIN_Z,MAX_X))
